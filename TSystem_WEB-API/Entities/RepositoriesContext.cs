@@ -13,5 +13,7 @@ namespace TSystem_WEB_API.Entities
 
         public DbSet<Studentt> Students { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Course> Courses { get; set; }
+
     }
 }

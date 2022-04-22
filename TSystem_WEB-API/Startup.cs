@@ -37,6 +37,8 @@ namespace TSystem_WEB_API
             services.AddScoped<IStudentServices, StudenttService>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IEmployeeServices, EmployeeServices>();
+            services.AddScoped<ICourseRepository, CourseRepository>();
+            services.AddScoped<ICourseServices, CourseServices>();
 
             services.AddSwaggerGen(c =>
             {
