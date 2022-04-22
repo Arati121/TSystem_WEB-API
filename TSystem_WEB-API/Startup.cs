@@ -35,6 +35,9 @@ namespace TSystem_WEB_API
            options.UseSqlServer(Configuration.GetSection("SqlConnection:ConnectionString").Value));
             services.AddScoped<IStudenttRepository, StudenttRepository>();
             services.AddScoped<IStudentServices, StudenttService>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IEmployeeServices, EmployeeServices>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TSystem_WEB_API", Version = "v1" });

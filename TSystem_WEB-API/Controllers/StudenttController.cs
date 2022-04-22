@@ -8,6 +8,8 @@ using TSystem_WEB_API.Services;
 
 namespace TSystem_WEB_API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class StudenttController: ControllerBase
     {
         private readonly IStudentServices _studservice;
